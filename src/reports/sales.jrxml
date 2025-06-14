@@ -1,0 +1,167 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="sales" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e15d519-eab3-497d-b483-a5c1caac3ee0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cG9zLnNhbGVzIEFTICwxODksMjEsYWY4ODI5ZTctZWVjMC00ZDk1LWI4ZWMtYzFhZDgzNmJmODJm&#xa;Ow=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<query language="SQL"><![CDATA[SELECT salesid,
+	`INID`,
+	`Cid`,
+	`Customer_Name`,
+	`Total_Qty`,
+	`Total_Bill`,
+	`Status`,
+	`Balance`
+FROM pos.sales]]></query>
+	<field name="salesid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="salesid"/>
+		<property name="com.jaspersoft.studio.field.label" value="salesid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="INID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="INID"/>
+		<property name="com.jaspersoft.studio.field.label" value="INID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Cid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Cid"/>
+		<property name="com.jaspersoft.studio.field.label" value="Cid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Customer_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Customer_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Customer_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Total_Qty" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Total_Qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="Total_Qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Total_Bill" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Total_Bill"/>
+		<property name="com.jaspersoft.studio.field.label" value="Total_Bill"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Status"/>
+		<property name="com.jaspersoft.studio.field.label" value="Status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<field name="Balance" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Balance"/>
+		<property name="com.jaspersoft.studio.field.label" value="Balance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
+	</field>
+	<group name="Group1">
+		<expression><![CDATA[$F{INID}]]></expression>
+		<groupHeader>
+			<band height="40">
+				<element kind="textField" uuid="d68ccb36-41b2-4e35-86c2-dc324562ca08" x="47" y="13" width="506" height="24" forecolor="#CC0000" bold="true" style="SubTitle">
+					<expression><![CDATA[$F{INID}]]></expression>
+				</element>
+				<element kind="rectangle" uuid="b9a66a94-77af-4a13-8b04-f7bca7e60ad1" mode="Opaque" x="0" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC"/>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="70" splitType="Stretch">
+		<element kind="staticText" uuid="6128375c-a5bd-4b9e-a458-c3c33197f530" x="190" y="40" width="157" height="22" style="SubTitle">
+			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
+		</element>
+		<element kind="staticText" uuid="d8efdd4e-86c7-4233-94db-b66dff217df6" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="36" splitType="Stretch">
+		<element kind="line" uuid="2c4ebb21-8745-45a1-a9ad-477acaac72cb" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="staticText" uuid="116980ad-6571-4a63-84c3-accf9b69e706" x="0" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Saled ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5af8c009-d476-45b6-8616-266361876a96"/>
+		</element>
+		<element kind="staticText" uuid="4961f974-7d7a-4151-b96b-6b95c9a3ac92" x="79" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Customer ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e3f58afb-4609-4c88-9f32-a42ea4443ba2"/>
+		</element>
+		<element kind="staticText" uuid="5956d201-1966-4db6-8fde-26c8e1de6a50" x="158" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Cus_Name]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2892d7fd-f3ba-4bf0-a478-262f68e0692b"/>
+		</element>
+		<element kind="staticText" uuid="a84b0110-55e2-4750-9c87-ff093506daf0" x="237" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Total_Qty]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8e2e9c49-95c1-4ea5-988f-aa75b2671c9b"/>
+		</element>
+		<element kind="staticText" uuid="066e3834-3180-4076-8244-0aa11cb13faf" x="316" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Total_Bill]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d9f86a7-4c95-43f1-ae7d-bd22f1241123"/>
+		</element>
+		<element kind="staticText" uuid="c9d18cb3-098f-495b-9017-83dd781434a8" x="395" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Status]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9792f439-97e9-4fc4-8bb0-aae2a878bb6b"/>
+		</element>
+		<element kind="staticText" uuid="eed81e26-c6fb-4cfb-a802-e3bbc96ecb1c" x="474" y="19" width="79" height="15" style="Column header">
+			<text><![CDATA[Balance]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e91724da-9414-498e-9764-824c1f5980e9"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<element kind="line" uuid="ffde0804-90e8-496b-86fb-ee363619f187" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1">
+				<pen lineWidth="0.5" lineColor="#999999"/>
+			</element>
+			<element kind="textField" uuid="e96439b9-479b-4683-8a3c-43381dd35b63" x="0" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{salesid}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5af8c009-d476-45b6-8616-266361876a96"/>
+			</element>
+			<element kind="textField" uuid="1aefd8e6-2ccd-4b10-8695-5aac50988085" x="79" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Cid}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e3f58afb-4609-4c88-9f32-a42ea4443ba2"/>
+			</element>
+			<element kind="textField" uuid="952c3652-3037-4357-85ae-675cd40dc641" x="158" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Customer_Name}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2892d7fd-f3ba-4bf0-a478-262f68e0692b"/>
+			</element>
+			<element kind="textField" uuid="19a9773e-e7d8-4842-9d5f-a27a7404660e" x="237" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Total_Qty}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8e2e9c49-95c1-4ea5-988f-aa75b2671c9b"/>
+			</element>
+			<element kind="textField" uuid="2a6f5c36-b05a-4fc8-97b0-6316a069bc7d" x="316" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Total_Bill}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d9f86a7-4c95-43f1-ae7d-bd22f1241123"/>
+			</element>
+			<element kind="textField" uuid="1c3413a1-c2c7-4e23-b3a3-e2a33c247d06" x="395" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Status}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9792f439-97e9-4fc4-8bb0-aae2a878bb6b"/>
+			</element>
+			<element kind="textField" uuid="d8a80a7e-cce5-45b3-a25d-74f6b0351447" x="474" y="0" width="79" height="15" style="Detail">
+				<expression><![CDATA[$F{Balance}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e91724da-9414-498e-9764-824c1f5980e9"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch">
+		<element kind="line" uuid="30093aa1-3dd7-4eea-9cc9-e183637af8f4" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+	</columnFooter>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="c9e9a989-76ae-4c92-a08c-dba3c3185f04" x="433" y="0" width="80" height="20" fontSize="10.0" bold="false" hTextAlign="Right" style="Column header">
+			<expression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></expression>
+		</element>
+		<element kind="textField" uuid="736cac2d-8f9a-48bb-b4e7-09302ce0e313" x="513" y="0" width="40" height="20" fontSize="10.0" evaluationTime="Report" bold="false" style="Column header">
+			<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+		</element>
+		<element kind="textField" uuid="c49bc611-71b3-4860-8112-76288860b48d" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>
