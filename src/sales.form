@@ -145,7 +145,7 @@
                                   <Component id="br_code" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="76" max="32767" attributes="0"/>
+                          <EmptySpace pref="145" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -278,7 +278,6 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="TOTAL PRICE"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="br_code1">
@@ -568,8 +567,8 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="btn_remove_all" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btn_remove" min="-2" pref="112" max="-2" attributes="0"/>
-                                  <Component id="btn_add_cart" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btn_remove" alignment="1" min="-2" pref="112" max="-2" attributes="0"/>
+                                  <Component id="btn_add_cart" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="68" max="32767" attributes="0"/>
@@ -579,9 +578,9 @@
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="btn_add_cart" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btn_remove" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btn_remove_all" min="-2" max="-2" attributes="0"/>

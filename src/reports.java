@@ -217,7 +217,7 @@ public class reports extends javax.swing.JPanel {
         // TODO add your handling code here:
          try{
             java.sql.Connection con = db.mycon();
-            String reportPath = "src/reports/sales.jrxml";
+            String reportPath = "src/reports/sales2.jrxml";
    
             JasperReport report = JasperCompileManager.compileReport(reportPath);
             JasperPrint print = JasperFillManager.fillReport(report,null,con);

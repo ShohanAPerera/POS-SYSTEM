@@ -206,7 +206,6 @@ public void data_load(){
         lbl_tot_price.setText("00");
 
         br_code.setForeground(java.awt.Color.white);
-        br_code.setText("TOTAL PRICE");
 
         br_code1.setForeground(java.awt.Color.white);
         br_code1.setText("BarCode");
@@ -252,7 +251,7 @@ public void data_load(){
                         .addComponent(br_code1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(br_code)))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(145, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -456,16 +455,16 @@ public void data_load(){
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btn_remove_all)
                     .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(btn_remove, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btn_add_cart)))
+                        .addComponent(btn_remove, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_add_cart, javax.swing.GroupLayout.Alignment.TRAILING)))
                 .addContainerGap(68, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addGap(60, 60, 60)
                 .addComponent(btn_add_cart)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btn_remove)
                 .addGap(18, 18, 18)
                 .addComponent(btn_remove_all)
@@ -672,6 +671,7 @@ public void data_load(){
              
              
              
+             
              }catch(NumberFormatException | SQLException e){
                  System.out.print(e);
              }
@@ -681,6 +681,7 @@ public void data_load(){
              String id  = lbl_inid.getText();
              Statement s = db.mycon().createStatement();
              s.executeUpdate("UPDATE extra SET val = '"+id+"' WHERE exid = 1 ");
+            
              
              
          }catch(SQLException e){
@@ -695,7 +696,7 @@ public void data_load(){
         
         para.put("inv_id", lbl_inid.getText());  // inv_id  is ireport parameter name
         
-        ReportView r =new ReportView("src\\reports\\print.jasper", para);
+        ReportView r =new ReportView("src/reports/print2.jrxml", para);
         r.setVisible(true);  
             
             
@@ -712,12 +713,12 @@ public void data_load(){
          i++;
          lbl_inid.setText(String.valueOf(i));
          lbl_price.setText("");
-             lbl_tot_price.setText("");
-             br_code.setText("");
-             bill_total.setText("");
-             balance_amt.setText("");
-             txt_paid.setText("");
-             lbl_qty.setText("");
+         lbl_tot_price.setText("");
+         br_code.setText("");
+         bill_total.setText("");
+         balance_amt.setText("");
+         txt_paid.setText("");
+         lbl_qty.setText("");
     }
    
                 

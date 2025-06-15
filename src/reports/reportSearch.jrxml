@@ -52,11 +52,11 @@ FROM pos.cart WHERE INID = $P{invo_para} ]]></query>
 	</field>
 	<background splitType="Stretch"/>
 	<title height="70" splitType="Stretch">
-		<element kind="staticText" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
-			<text><![CDATA[Leaf Red Title]]></text>
+		<element kind="staticText" uuid="148a06b0-b26f-4752-98da-012ba6e4c852" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
 		</element>
-		<element kind="staticText" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7" x="117" y="46" width="157" height="22" style="SubTitle">
-			<text><![CDATA[Leaf Red SubTitle]]></text>
+		<element kind="staticText" uuid="95568fb1-70b2-406f-b2b8-85e4f752cf4b" x="200" y="33" width="180" height="29" style="SubTitle">
+			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
 		</element>
 	</title>
 	<pageHeader splitType="Stretch"/>

@@ -61,11 +61,14 @@ WHERE  cart.INID = $P{inv_id} ]]></query>
 	</field>
 	<background splitType="Stretch"/>
 	<title height="70" splitType="Stretch">
-		<element kind="staticText" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
-			<text><![CDATA[Invoice CODX STORES]]></text>
-		</element>
 		<element kind="staticText" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7" x="0" y="40" width="157" height="22" style="SubTitle">
 			<text><![CDATA[]]></text>
+		</element>
+		<element kind="staticText" uuid="382c0e63-374c-4a47-888f-03915a634b3b" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
+		</element>
+		<element kind="staticText" uuid="1c053039-acdc-4ff5-b6a3-e5fc1524d2b0" x="200" y="33" width="180" height="29" style="SubTitle">
+			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
 		</element>
 	</title>
 	<pageHeader splitType="Stretch"/>

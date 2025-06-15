@@ -1,13 +1,12 @@
 <!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
-<jasperReport name="inidReport" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e15d519-eab3-497d-b483-a5c1caac3ee0">
-	<property name="com.jaspersoft.studio.data.sql.tables" value="cG9zLnNhbGVzIEFTICwxNjAsMzgsYzkyNmUxMDYtMzkwZS00ZTlhLTgzNmQtMTU5ZTZhOTcyM2Q2&#xa;Ow=="/>
+<jasperReport name="sales2" language="java" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e15d519-eab3-497d-b483-a5c1caac3ee0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cG9zLnNhbGVzIEFTICwyMDYsNzUsOWZmODJmMDktNzg2Yi00Njc3LWFhNWMtNWM3NDRkNTdmYmM1&#xa;Ow=="/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
 	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
 	<style name="Detail" fontName="Arial" fontSize="12.0"/>
 	<query language="SQL"><![CDATA[SELECT salesid,
-	`INID`,
 	`Cid`,
 	`Customer_Name`,
 	`Total_Qty`,
@@ -18,11 +17,6 @@ FROM pos.sales]]></query>
 	<field name="salesid" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.name" value="salesid"/>
 		<property name="com.jaspersoft.studio.field.label" value="salesid"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
-	</field>
-	<field name="INID" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.name" value="INID"/>
-		<property name="com.jaspersoft.studio.field.label" value="INID"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
 	</field>
 	<field name="Cid" class="java.lang.Integer">
@@ -55,12 +49,26 @@ FROM pos.sales]]></query>
 		<property name="com.jaspersoft.studio.field.label" value="Balance"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="sales"/>
 	</field>
+	<group name="Group1">
+		<expression><![CDATA[$F{Customer_Name}]]></expression>
+		<groupHeader>
+			<band height="40">
+				<element kind="textField" uuid="d68ccb36-41b2-4e35-86c2-dc324562ca08" x="47" y="13" width="506" height="24" forecolor="#CC0000" bold="true" style="SubTitle">
+					<expression><![CDATA[$F{Customer_Name}]]></expression>
+				</element>
+				<element kind="rectangle" uuid="b9a66a94-77af-4a13-8b04-f7bca7e60ad1" mode="Opaque" x="0" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC"/>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
 	<background splitType="Stretch"/>
 	<title height="70" splitType="Stretch">
-		<element kind="staticText" uuid="431943c4-4823-4056-9738-c9ac218e8acc" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+		<element kind="staticText" uuid="0d2b7180-abbb-4143-a019-5e4c86ca4f5d" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
 			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
 		</element>
-		<element kind="staticText" uuid="99e1f038-2406-481f-a79c-de52d2a23980" x="200" y="33" width="180" height="29" style="SubTitle">
+		<element kind="staticText" uuid="0c20d6f3-e6ea-4861-a947-9d223c2daa0e" x="190" y="40" width="157" height="22" style="SubTitle">
 			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
 		</element>
 	</title>
@@ -69,37 +77,29 @@ FROM pos.sales]]></query>
 		<element kind="line" uuid="2c4ebb21-8745-45a1-a9ad-477acaac72cb" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1">
 			<pen lineWidth="0.5" lineColor="#999999"/>
 		</element>
-		<element kind="staticText" uuid="33271c03-18d2-4616-ba4d-a5cc2cc64e80" x="0" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="2b6833c4-a27c-49d0-91c0-1437001d0521" x="0" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[salesid]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="015b1dff-7e4b-4171-a992-61d046ac430a"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="210102e8-64f1-4535-b1fe-38c96d50efe3"/>
 		</element>
-		<element kind="staticText" uuid="62bc1f82-c6cc-45e6-8bc4-c76cbf5ddb52" x="69" y="19" width="69" height="15" style="Column header">
-			<text><![CDATA[INID]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4de20e43-7a7f-4b36-abab-244ce837307f"/>
-		</element>
-		<element kind="staticText" uuid="601e518a-c88f-49b2-9f0f-e3f4ab011802" x="138" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="146538e8-7791-489b-a09b-c05c48b81c30" x="92" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[Cid]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3bb6bad-51a4-48df-bf06-0dd563773547"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a01dd54-f88c-4dfd-9db1-189f388bea80"/>
 		</element>
-		<element kind="staticText" uuid="052f2ab8-db85-4886-8114-f3ae741dbea1" x="207" y="19" width="69" height="15" style="Column header">
-			<text><![CDATA[Customer_Name]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8330fad-bf3d-477f-a1a9-5b1410912340"/>
-		</element>
-		<element kind="staticText" uuid="08802b6b-f142-4a7c-a00e-a5878eeba26d" x="276" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="1c27fbf1-9a73-4aea-89ae-88f3aec26f18" x="184" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[Total_Qty]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20fe42ef-fd7a-4f4a-b935-72a8f47cfdb1"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0508aa81-66cb-47a9-a166-37d45df589f4"/>
 		</element>
-		<element kind="staticText" uuid="4a41fdb8-e0b8-420a-89ac-65198acd7cc7" x="345" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="0d1d897c-bd23-462d-a4b9-f9e53c39d8c6" x="276" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[Total_Bill]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="377c8bcb-18bb-47b7-bc66-ecf36d325c0b"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9ade663-f2c9-4702-b104-e1beed67d3bf"/>
 		</element>
-		<element kind="staticText" uuid="8cb4fa96-e697-4aba-aa2f-34ac7acff062" x="414" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="f46f47c0-e9c0-4833-8c0b-24d52cf8b39d" x="368" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[Status]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="332a70ac-d1f8-48b8-b9a6-299c6aa428a9"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c316f668-fe07-4dcb-b5a2-8c0f07d40fa3"/>
 		</element>
-		<element kind="staticText" uuid="0ed06c9f-a09d-4b14-b4a6-7a4a2b2bf1d1" x="483" y="19" width="69" height="15" style="Column header">
+		<element kind="staticText" uuid="2f6e70e0-d7d3-4f7a-856a-ac3da6e1ac16" x="460" y="19" width="92" height="15" style="Column header">
 			<text><![CDATA[Balance]]></text>
-			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29756927-3c9d-41ad-a275-4e5bd9461380"/>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a166043-96bc-491e-8074-06258370aee1"/>
 		</element>
 	</columnHeader>
 	<detail>
@@ -107,37 +107,29 @@ FROM pos.sales]]></query>
 			<element kind="line" uuid="ffde0804-90e8-496b-86fb-ee363619f187" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1">
 				<pen lineWidth="0.5" lineColor="#999999"/>
 			</element>
-			<element kind="textField" uuid="33083ab0-84b4-4b50-ba33-9a5a572205fe" x="0" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="3d5e4925-4aed-4cc4-a7c4-518baf78bca9" x="0" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{salesid}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="015b1dff-7e4b-4171-a992-61d046ac430a"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="210102e8-64f1-4535-b1fe-38c96d50efe3"/>
 			</element>
-			<element kind="textField" uuid="ade523c3-c2e5-47a5-b4fd-f61da07c9abf" x="69" y="0" width="69" height="15" style="Detail">
-				<expression><![CDATA[$F{INID}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4de20e43-7a7f-4b36-abab-244ce837307f"/>
-			</element>
-			<element kind="textField" uuid="ef4dc8f3-92ca-457d-b184-c9102c7ca88e" x="138" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="59828c19-63c1-44ba-95f4-6da33f8f6d03" x="92" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{Cid}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a3bb6bad-51a4-48df-bf06-0dd563773547"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1a01dd54-f88c-4dfd-9db1-189f388bea80"/>
 			</element>
-			<element kind="textField" uuid="c302f9fc-a921-4da5-8caa-8936697d3bb7" x="207" y="0" width="69" height="15" style="Detail">
-				<expression><![CDATA[$F{Customer_Name}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b8330fad-bf3d-477f-a1a9-5b1410912340"/>
-			</element>
-			<element kind="textField" uuid="e16fee5e-99dc-4118-bda0-0a2df48a3b59" x="276" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="89c233ec-7289-4f84-a8cc-2f7ee3f489ab" x="184" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{Total_Qty}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20fe42ef-fd7a-4f4a-b935-72a8f47cfdb1"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0508aa81-66cb-47a9-a166-37d45df589f4"/>
 			</element>
-			<element kind="textField" uuid="0c122343-cd0f-4724-b5cb-3b094d054afc" x="345" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="bcfabe27-c42f-4cdf-8141-7a3121b76e94" x="276" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{Total_Bill}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="377c8bcb-18bb-47b7-bc66-ecf36d325c0b"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9ade663-f2c9-4702-b104-e1beed67d3bf"/>
 			</element>
-			<element kind="textField" uuid="08cf341c-9485-473a-b8b7-df4d8bcc6c32" x="414" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="f2638b6c-09aa-4f13-8579-3d3af665fdb1" x="368" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{Status}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="332a70ac-d1f8-48b8-b9a6-299c6aa428a9"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c316f668-fe07-4dcb-b5a2-8c0f07d40fa3"/>
 			</element>
-			<element kind="textField" uuid="9b4a1391-a708-42d4-a92c-db09b7ba9fc8" x="483" y="0" width="69" height="15" style="Detail">
+			<element kind="textField" uuid="ecde0b72-6c7e-4dae-a099-4d8afe84fd51" x="460" y="0" width="92" height="15" style="Detail">
 				<expression><![CDATA[$F{Balance}]]></expression>
-				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="29756927-3c9d-41ad-a275-4e5bd9461380"/>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a166043-96bc-491e-8074-06258370aee1"/>
 			</element>
 		</band>
 	</detail>

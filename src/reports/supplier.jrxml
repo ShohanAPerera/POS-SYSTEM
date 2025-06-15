@@ -27,11 +27,11 @@ FROM pos.supplier]]></query>
 	</field>
 	<background splitType="Stretch"/>
 	<title height="70" splitType="Stretch">
-		<element kind="staticText" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
-			<text><![CDATA[Leaf Red Title]]></text>
+		<element kind="staticText" uuid="6df51d5a-fdd2-4f1e-a9c0-20e4eb9a714c" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
 		</element>
-		<element kind="staticText" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7" x="117" y="46" width="157" height="22" style="SubTitle">
-			<text><![CDATA[Leaf Red SubTitle]]></text>
+		<element kind="staticText" uuid="6bb4083c-06e1-4767-9a2d-ffdb72448923" x="185" y="33" width="157" height="22" style="SubTitle">
+			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
 		</element>
 	</title>
 	<pageHeader splitType="Stretch"/>
@@ -40,15 +40,15 @@ FROM pos.supplier]]></query>
 			<pen lineWidth="0.5" lineColor="#999999"/>
 		</element>
 		<element kind="staticText" uuid="041bb013-f53b-42ea-b943-170a58e33801" x="0" y="19" width="185" height="15" style="Column header">
-			<text><![CDATA[sid]]></text>
+			<text><![CDATA[Supplier ID]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4960950b-aa47-492a-9f93-c92f1528c4c3"/>
 		</element>
 		<element kind="staticText" uuid="05637076-e267-45de-a620-cbbd475a3a1f" x="185" y="19" width="185" height="15" style="Column header">
-			<text><![CDATA[supplier_Name]]></text>
+			<text><![CDATA[Supplier-Name]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ecfebe1-6d6d-485c-ad9a-a7ebaf4bce0d"/>
 		</element>
 		<element kind="staticText" uuid="7e20b475-c92a-482a-9d79-35e647d370d7" x="370" y="19" width="185" height="15" style="Column header">
-			<text><![CDATA[Tp_NUmber]]></text>
+			<text><![CDATA[TP_Number]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5703b226-b33b-4383-a294-21accf9f7483"/>
 		</element>
 	</columnHeader>

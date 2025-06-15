@@ -27,11 +27,11 @@ FROM pos.customer]]></query>
 	</field>
 	<background splitType="Stretch"/>
 	<title height="70" splitType="Stretch">
-		<element kind="staticText" uuid="91f5fe7f-a65f-46a3-81ae-30f2d82c45a2" x="0" y="13" width="263" height="33" vTextAlign="Middle" style="Title">
-			<text><![CDATA[Leaf Red Title]]></text>
+		<element kind="staticText" uuid="b67b0176-047d-4565-ac7a-484eb71ce740" x="110" y="0" width="320" height="33" vTextAlign="Middle" style="Title">
+			<text><![CDATA[CODEX TECHNOLOGIES   Technologies]]></text>
 		</element>
-		<element kind="staticText" uuid="6931f6fc-c9e8-4cc3-9eec-607a123c87f7" x="117" y="46" width="157" height="22" style="SubTitle">
-			<text><![CDATA[Leaf Red SubTitle]]></text>
+		<element kind="staticText" uuid="5eea40d3-b04f-4cc4-af8e-6daf0f06ff68" x="200" y="33" width="157" height="22" style="SubTitle">
+			<text><![CDATA[No 215, Hill Street , Mt Lavinia]]></text>
 		</element>
 	</title>
 	<pageHeader splitType="Stretch"/>
@@ -40,7 +40,7 @@ FROM pos.customer]]></query>
 			<pen lineWidth="0.5" lineColor="#999999"/>
 		</element>
 		<element kind="staticText" uuid="24ab8b38-d287-42ad-bef1-cd64b137448f" x="0" y="19" width="185" height="15" style="Column header">
-			<text><![CDATA[cid]]></text>
+			<text><![CDATA[Customer ID]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70b4b8ea-0366-4a7d-be5b-7bb88162c8a1"/>
 		</element>
 		<element kind="staticText" uuid="caa87a17-1e3d-4fdb-8438-092e7c6ad1fb" x="185" y="19" width="185" height="15" style="Column header">
